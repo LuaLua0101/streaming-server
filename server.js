@@ -1,6 +1,9 @@
 var app = require("express")()
 var http = require("http").createServer(app)
 var io = require("socket.io")(http)
+var cors = require('cors')
+
+app.use(cors())
 
 app.get("/", (req, res) => {
   res.send("Streaming server on ready")
