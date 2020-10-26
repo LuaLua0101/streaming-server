@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   res.send("Streaming server on ready")
 })
 
-http.listen(80, () => {
+http.listen(3000, () => {
   console.log("listening on *:8000")
 })
 
