@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 })
 
 var host = process.env.HOST || "0.0.0.0";
-http.listen(process.env.PORT || 8080, () => {
+http.listen(process.env.PORT || 8080, host, () => {
   console.log("listening on *:5000")
 })
 
