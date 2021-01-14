@@ -9,7 +9,8 @@ app.get("/", (req, res) => {
   res.send("Streaming server on ready")
 })
 
-http.listen(process.env.PORT || 5000, () => {
+var host = process.env.HOST || "0.0.0.0";
+http.listen(process.env.PORT || 8080, () => {
   console.log("listening on *:5000")
 })
 
